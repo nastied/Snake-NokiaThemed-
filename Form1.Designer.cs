@@ -43,6 +43,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.YellowGreen;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = global::Snake.Properties.Resources.Nokia_Snakes;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(500, 350);

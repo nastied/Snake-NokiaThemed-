@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -10,7 +11,7 @@ namespace Snake
         int score = 0;
         int appleX, appleY;
         List<Cerc> snake = new List<Cerc>();
-
+    
         Color nokiaDark = Color.FromArgb(43, 50, 25);
         Color nokiaLight = Color.FromArgb(143, 170, 113);
 
@@ -45,6 +46,9 @@ namespace Snake
 
         private void button1_Click(object sender, EventArgs e)
         {
+            pictureBox1.BackColor = nokiaLight;
+            pictureBox1.Image = null;
+
             RestartGame();
         }
 
